@@ -65,8 +65,8 @@
                           <a href="cart_item.product.get_absolute_url">{{cart_item.product.name}}</a>
                         </div>
                       </td>
-                      <td class="">{{cart_item.product.price}}</td>
-                      <td class="">₹ {{cart_item.quantity}}</td>
+                      <td class="">₹ {{cart_item.product.price}}</td>
+                      <td class="">{{cart_item.quantity}}</td>
                       {% if cart_item.quantity < cart_item.product.stock %}
                       <td>
                         &nbsp; <a href="{% url 'cart:add_cart' cart_item.product.id %}" class="my_a"><i class="bi bi-plus-lg custom_icon"></i></a>&nbsp;
